@@ -16,7 +16,7 @@ This repository contains several code and data components:
 
 + `parse-halflife.ipynb` -- extracts half-life and other structural information from the Drugbank xml download into a [tsv file](data/drugbank_halflife.tsv) where each row represents a drug. The half-life information was listed as free text in Drugbank. We manually extract the numeric value from free text into a [xlsx file](data/drugbank_halflife_curated.xlsx). All values were converted to hours. If the value was listed as time range (e.g. a ~ b) in DrugBank, average was calculated (e.g. (a + b)/2).
 
-+ `extract-curated-halflife.ipynb` -- extracts subset of drugs with curated half-life into a [tsv file](data/drugbank_subset_halflife_curated.csv) where each row represents a drug.
++ `extract-curated-halflife.ipynb` -- extracts subset of drugs with curated half-life into a [tsv file](data/drugbank_subset_halflife_curated.tsv) where each row represents a drug.
 
 + `predict-halflife.ipynb` -- builds supervised learning models to predict half-life based on structural properties of drugs.
 
